@@ -14,7 +14,7 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://docs.fincargo.ai",
   baseUrl: "/",
 
   organizationName: "facebook", // Usually your GitHub org/user name.

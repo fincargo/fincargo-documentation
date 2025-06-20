@@ -1,0 +1,31 @@
+name: Deploy Docusaurus (my-docs) to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main    # Change si ta branche par défaut est "master"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        working-directory: my-docs
+        run: npm ci
+
+      - name: Build website
+        working-directory: my-docs
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./my-docs/build

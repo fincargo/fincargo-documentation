@@ -1,0 +1,10 @@
+{
+    "label": "Features",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "title": "Fonctionnalités",
+      "description": "Documentation technique du backend Fincargo.",
+      "slug": "/backend/features"
+    }
+  }

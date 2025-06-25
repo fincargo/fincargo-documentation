@@ -1,0 +1,10 @@
+{
+    "label": "Data Base",
+    "position": 2,
+    "link": {
+      "type": "generated-index",
+      "title": "Data Base",
+      "description": "Documentation technique du backend Fincargo.",
+      "slug": "/backend/data-base"
+    }
+  }
